@@ -112,11 +112,16 @@ section {
 
 /* Header Styles */
 header {
-    background-color: var(--indigo);
+    background-color: rgba(30, 11, 64, 0.1);
     padding: 15px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: all 0.3s ease;
 }
 
 .header-content {
@@ -180,13 +185,31 @@ header {
 #hero {
     background-color: var(--indigo);
     color: var(--white);
-    padding: 100px 0;
+    padding: 280px 0 100px 0;
     text-align: center;
-    /* background-image: url('assets/SDFEN.png'); */
-    background-size: 300px;
-    background-position: right bottom;
+    background-image: url('assets/herobg.webp');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: soft-light;
+    background-blend-mode: overlay;
+    position: relative;
+    margin-top: 0;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 11, 64, 0.7);
+    z-index: 1;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {

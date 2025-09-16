@@ -52,10 +52,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Add active class to navigation based on scroll position
+    // Add active class to navigation based on scroll position and handle blur effect
     window.addEventListener('scroll', function() {
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.main-nav a');
+        const header = document.querySelector('header');
         
         let currentSection = '';
         
@@ -73,6 +74,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.classList.add('active');
             }
         });
+        
+        // Handle blur effect and background color based on scroll position
+        if (window.scrollY > 50) {
+            header.style.backdropFilter = 'blur(10px)';
+            header.style.webkitBackdropFilter = 'blur(10px)';
+            header.style.backgroundColor = 'rgb(30 11 64 / 84%)';
+        } else {
+            header.style.backdropFilter = 'blur(0px)';
+            header.style.webkitBackdropFilter = 'blur(0px)';
+            header.style.backgroundColor = 'rgba(30, 11, 64, 0.1)';
+        }
     });
     
     // Add animation on scroll for story cards and character profiles
