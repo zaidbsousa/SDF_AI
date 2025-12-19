@@ -1,0 +1,799 @@
+/* Character Detail Page Styles */
+
+/* Character Hero Section */
+.character-hero-section {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--purple) 0%, #3a0e66 100%);
+    padding: 120px 0 80px;
+    overflow: hidden;
+}
+
+.character-hero-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.15;
+    animation: float 20s infinite ease-in-out;
+    pointer-events: none;
+}
+
+.character-hero-blob-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--yellow);
+    top: 10%;
+    right: -10%;
+    animation-duration: 25s;
+}
+
+.character-hero-blob-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--yellow);
+    bottom: 15%;
+    left: -5%;
+    animation-duration: 30s;
+    animation-delay: -5s;
+}
+
+.character-hero-blob-3 {
+    width: 350px;
+    height: 350px;
+    background: rgba(247, 188, 62, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 35s;
+    animation-delay: -10s;
+}
+
+.character-hero-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.character-hero-image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.character-hero-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--yellow);
+    opacity: 0.5;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.character-hero-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: contain;
+    object-position: bottom;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.character-hero-image-wrapper:hover .character-hero-image {
+    transform: scale(1.02);
+}
+
+.character-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--white);
+}
+
+.character-hero-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(247, 188, 62, 0.2);
+    border: 2px solid var(--yellow);
+    border-radius: 25px;
+    color: var(--yellow);
+    font-size: 1rem;
+    font-weight: 500;
+    width: fit-content;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.character-hero-title {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.character-hero-name-en {
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.character-hero-quote {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    padding: 30px 0;
+    border-right: 4px solid var(--yellow);
+    padding-right: 30px;
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.character-detail-section {
+    padding: 50px 0 50px;
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Back Button */
+.back-button-wrapper {
+    margin-bottom: 25px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: rgba(84, 22, 145, 0.08);
+    border: 2px solid rgba(84, 22, 145, 0.15);
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: rgba(84, 22, 145, 0.15);
+    border-color: var(--purple);
+    transform: translateX(-5px);
+}
+
+.back-button i {
+    font-size: 0.9rem;
+}
+
+/* Character Detail Card */
+.character-detail-card {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    background: linear-gradient(135deg, rgba(84, 22, 145, 0.03) 0%, rgba(247, 188, 62, 0.03) 100%);
+    padding: 50px;
+    border-radius: 30px;
+    border: 2px solid rgba(84, 22, 145, 0.1);
+    margin-bottom: 60px;
+    align-items: start;
+}
+
+.character-detail-image {
+    position: relative;
+}
+
+.character-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(84, 22, 145, 0.2);
+    object-fit: cover;
+}
+
+.character-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.character-detail-role {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(247, 188, 62, 0.15);
+    border: 1px solid rgba(247, 188, 62, 0.3);
+    border-radius: 20px;
+    color: var(--purple);
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.character-detail-content h1 {
+    font-size: 3rem;
+    color: var(--purple);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.character-name-en {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.character-detail-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.character-detail-style {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.character-detail-style strong {
+    color: var(--purple);
+}
+
+/* Quote Section */
+.character-quote-section {
+    position: relative;
+    background: linear-gradient(135deg, var(--purple) 0%, #7a34b5 100%);
+    padding: 35px 40px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.quote-icon-large {
+    font-size: 3rem;
+    color: var(--yellow);
+    opacity: 0.3;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-icon-large i {
+    transform: rotate(180deg);
+}
+
+.character-detail-quote {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--white);
+    font-style: normal;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Details Grid */
+.character-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.detail-card {
+    background: var(--white);
+    border: 2px solid rgba(84, 22, 145, 0.1);
+    border-radius: 18px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.detail-card:hover {
+    border-color: var(--purple);
+    box-shadow: 0 10px 30px rgba(84, 22, 145, 0.1);
+    transform: translateY(-5px);
+}
+
+.detail-card-full {
+    grid-column: 1 / -1;
+}
+
+.detail-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(84, 22, 145, 0.1);
+}
+
+.detail-card-header i {
+    font-size: 1.3rem;
+    color: var(--purple);
+}
+
+.detail-card-header h3 {
+    font-size: 1.15rem;
+    color: var(--purple);
+    margin: 0;
+}
+
+.detail-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.detail-item strong {
+    color: var(--purple);
+    font-size: 0.95rem;
+}
+
+.detail-item p {
+    color: var(--dark-gray);
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* Values and Traits */
+.values-list,
+.traits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.value-tag,
+.trait-tag {
+    padding: 8px 16px;
+    background: rgba(84, 22, 145, 0.08);
+    border: 2px solid rgba(84, 22, 145, 0.15);
+    border-radius: 20px;
+    color: var(--purple);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Sample Quotes */
+.sample-quotes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sample-quote-item {
+    padding: 15px 18px;
+    background: rgba(247, 188, 62, 0.08);
+    border-radius: 10px;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Avoids List */
+.avoids-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.avoid-item {
+    padding: 12px 18px;
+    background: rgba(220, 53, 69, 0.05);
+    border-radius: 10px;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Campaign Roles */
+.campaign-roles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.role-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: rgba(84, 22, 145, 0.05);
+    border: 2px solid rgba(84, 22, 145, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.role-item.active {
+    background: rgba(84, 22, 145, 0.1);
+    border-color: var(--purple);
+}
+
+.role-item i {
+    font-size: 1.2rem;
+    color: var(--purple);
+}
+
+.role-item.active i {
+    color: var(--yellow);
+}
+
+.role-item span {
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+}
+
+.role-item.active span {
+    color: var(--purple);
+    font-weight: 500;
+}
+
+/* Voice Player Section */
+.voice-player-section {
+    margin-bottom: 40px;
+}
+
+.voice-player-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(135deg, rgba(84, 22, 145, 0.05) 0%, rgba(247, 188, 62, 0.05) 100%);
+    padding: 30px 35px;
+    border-radius: 20px;
+    border: 2px solid rgba(84, 22, 145, 0.1);
+}
+
+.voice-player-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--purple) 0%, #7a34b5 100%);
+    border-radius: 18px;
+    color: var(--white);
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.voice-player-content {
+    flex: 1;
+}
+
+.voice-player-content h3 {
+    font-size: 1.3rem;
+    color: var(--purple);
+    margin: 0 0 15px 0;
+}
+
+.voice-player-content {
+    position: relative;
+}
+
+.voice-player-content audio {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 12px;
+    outline: none;
+}
+
+/* Custom audio player styling for character detail page */
+.voice-player-content audio::-webkit-media-controls-panel {
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+.voice-player-content audio::-webkit-media-controls-play-button {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.voice-player-content audio::-webkit-media-controls-current-time-display,
+.voice-player-content audio::-webkit-media-controls-time-remaining-display {
+    color: var(--purple);
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.85rem;
+}
+
+.voice-player-content audio::-webkit-media-controls-timeline {
+    background-color: transparent;
+    border-radius: 2px;
+    height: 4px;
+}
+
+.voice-player-content audio::-webkit-media-controls-timeline::-webkit-media-slider-thumb {
+    background-color: var(--purple);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.voice-player-content audio::-webkit-media-controls-volume-slider {
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.voice-player-content audio::-webkit-media-controls-volume-slider::-webkit-media-slider-thumb {
+    background-color: var(--purple);
+    border-radius: 50%;
+}
+
+/* Firefox audio styling for character detail page */
+.voice-player-content audio::-moz-media-controls-panel {
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+.voice-player-content audio::-moz-media-controls-play-button {
+    background-color: var(--yellow);
+    border-radius: 50%;
+}
+
+.voice-player-content audio::-moz-media-controls-current-time-display,
+.voice-player-content audio::-moz-media-controls-time-remaining-display {
+    color: var(--purple);
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Other Characters Navigation */
+.other-characters-section {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid rgba(84, 22, 145, 0.1);
+}
+
+.other-characters-section h3 {
+    font-size: 1.5rem;
+    color: var(--purple);
+    margin-bottom: 25px;
+}
+
+.character-nav-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character-nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 20px;
+    background: var(--white);
+    border: 2px solid rgba(84, 22, 145, 0.1);
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    min-width: 160px;
+}
+
+.character-nav-link:hover {
+    border-color: var(--purple);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(84, 22, 145, 0.15);
+}
+
+.character-nav-link img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.character-nav-link span {
+    color: var(--purple);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .character-hero-section {
+        min-height: 70vh;
+        padding: 100px 0 60px;
+    }
+
+    .character-hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .character-hero-image-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .character-hero-title {
+        font-size: 2.5rem;
+        justify-content: center;
+    }
+
+    .character-hero-name-en {
+        font-size: 1.5rem;
+    }
+
+    .character-hero-quote {
+        font-size: 1.2rem;
+        text-align: center;
+        border-right: none;
+        border-bottom: 4px solid var(--yellow);
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .character-hero-badge {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .character-hero-section {
+        min-height: 60vh;
+        padding: 80px 0 40px;
+    }
+
+    .character-hero-title {
+        font-size: 2rem;
+    }
+
+    .character-hero-name-en {
+        font-size: 1.2rem;
+    }
+
+    .character-hero-quote {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .character-detail-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .character-detail-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .character-detail-content h1 {
+        font-size: 2.2rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .character-detail-role {
+        margin: 0 auto 10px;
+    }
+
+    .character-quote-section {
+        padding: 40px 30px;
+    }
+
+    .character-detail-quote {
+        font-size: 1.2rem;
+    }
+
+    .character-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campaign-roles-list {
+        grid-template-columns: 1fr;
+    }
+
+    .voice-player-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .character-nav-grid {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .character-nav-link {
+        flex: 1;
+        min-width: 0;
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .character-detail-section {
+        padding: 80px 0 60px;
+    }
+
+    .character-detail-card {
+        padding: 25px;
+    }
+
+    .character-detail-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .character-name-en {
+        font-size: 1.2rem;
+    }
+
+    .character-quote-section {
+        padding: 30px 20px;
+    }
+
+    .character-detail-quote {
+        font-size: 1.1rem;
+    }
+
+    .detail-card {
+        padding: 20px;
+    }
+
+    .detail-card-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .character-nav-grid {
+        flex-direction: row;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .character-nav-link {
+        flex: 1;
+        min-width: 0;
+        padding: 15px;
+    }
+
+    .character-nav-link img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .character-nav-link span {
+        font-size: 0.9rem;
+    }
+}
+

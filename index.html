@@ -1,197 +1,565 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDF AI - Meet Our Characters</title>
+    <title>حملة Restart</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="حملة Restart - إرجع لنفسك… وابدأ من جديد | الصحة النفسية والدعم النفسي الاجتماعي في غزة">
+    <meta name="description" content="حملة Restart تهدف إلى مساعدة الشباب وأفراد المجتمع في غزة على إعادة التشغيل والعودة إلى التوازن بعد فترات من الضغط والصدمات. نقدم محتوى توعوي حول الصحة النفسية، بودكاست، وشخصيات داعمة للشباب واليافعين.">
+    <meta name="keywords" content="الصحة النفسية, الدعم النفسي الاجتماعي, غزة, حملة Restart, الصحة النفسية في غزة, دعم الشباب, الصحة النفسية للشباب, بودكاست الصحة النفسية, المنتدى الاجتماعي التنموي, SDF">
+    <meta name="author" content="المنتدى الاجتماعي التنموي - SDF">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Arabic">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://restart.sdf-pal.org/">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://restart.sdf-pal.org/">
+    <meta property="og:title" content="حملة Restart - إرجع لنفسك… وابدأ من جديد">
+    <meta property="og:description" content="حملة Restart تهدف إلى مساعدة الشباب وأفراد المجتمع في غزة على إعادة التشغيل والعودة إلى التوازن بعد فترات من الضغط والصدمات. نقدم محتوى توعوي حول الصحة النفسية، بودكاست، وشخصيات داعمة.">
+    <meta property="og:image" content="https://restart.sdf-pal.org/assets/hero.webp">
+    <meta property="og:image:secure_url" content="https://restart.sdf-pal.org/assets/hero.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="حملة Restart - إرجع لنفسك وابدأ من جديد - الصحة النفسية والدعم النفسي الاجتماعي في غزة">
+    <meta property="og:locale" content="ar_PS">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="حملة Restart">
+    
+    <!-- Additional WhatsApp Optimization -->
+    <meta property="og:image:url" content="https://restart.sdf-pal.org/assets/hero.webp">
+    
+    <!-- X (formerly Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://restart.sdf-pal.org/">
+    <meta name="twitter:title" content="حملة Restart - إرجع لنفسك… وابدأ من جديد">
+    <meta name="twitter:description" content="حملة Restart تهدف إلى مساعدة الشباب وأفراد المجتمع في غزة على إعادة التشغيل والعودة إلى التوازن بعد فترات من الضغط والصدمات.">
+    <meta name="twitter:image" content="https://restart.sdf-pal.org/assets/hero.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="assets/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="slideshow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "المنتدى الاجتماعي التنموي - SDF",
+      "alternateName": "Social Development Forum",
+      "url": "https://restart.sdf-pal.org",
+      "logo": "https://restart.sdf-pal.org/assets/mainLogo.webp",
+      "description": "منظمة غير حكومية تعمل على دعم الصحة النفسية والدعم النفسي الاجتماعي في غزة",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "PS",
+        "addressRegion": "Gaza"
+      },
+      "sameAs": [
+        "https://www.facebook.com/sdf.pal/",
+        "https://www.instagram.com/sdf.pal/",
+        "https://x.com/SdfPal",
+        "https://www.linkedin.com/company/sdf-pal",
+        "https://www.youtube.com/@socialdevelopmentalforum-s652"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "availableLanguage": ["Arabic"]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Campaign",
+      "name": "حملة Restart",
+      "alternateName": "Restart Campaign",
+      "description": "حملة تهدف إلى مساعدة الشباب وأفراد المجتمع في غزة على إعادة التشغيل والعودة إلى التوازن بعد فترات من الضغط والصدمات، من خلال رفع الوعي، كسر الوصمة، وتشجيع طلب الدعم",
+      "url": "https://restart.sdf-pal.org",
+      "image": "https://restart.sdf-pal.org/assets/hero.webp",
+      "organizer": {
+        "@type": "Organization",
+        "name": "المنتدى الاجتماعي التنموي - SDF"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "الصحة النفسية والدعم النفسي الاجتماعي في غزة"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "الشباب واليافعين والفتيات والأسر في غزة"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "حملة Restart",
+      "url": "https://restart.sdf-pal.org",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://restart.sdf-pal.org/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo-container">
-                    <img src="assets/SDFEN.png" alt="SDF Logo" class="logo">
+                <div class="logo">
+                    <a href="#hero" aria-label="الصفحة الرئيسية - حملة Restart">
+                        <img id="headerLogo" src="assets/mainLogo.webp" alt="شعار حملة Restart - إرجع لنفسك وابدأ من جديد">
+                    </a>
                 </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#about">About SDF</a></li>
-                        <li><a href="#characters">Characters</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-menu">
+                        <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                        <li><a href="#about" class="nav-link">عن الحملة</a></li>
+                        <li><a href="#audience" class="nav-link">الفئات المستهدفة</a></li>
+                        <li>
+                            <a href="#characters" class="nav-link">شخصياتنا</a>
+                            <ul class="nav-submenu">
+                                <li><a href="character.html?id=aya" class="nav-link">آية (Aya)</a></li>
+                                <li><a href="character.html?id=atta" class="nav-link">عطا (Atta)</a></li>
+                                <li><a href="character.html?id=rawan" class="nav-link">روان (Rawan)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#quote" class="nav-link">قنواتنا</a></li>
+                        <li><a href="#quote" class="nav-link cta-link">تواصل معنا</a></li>
                     </ul>
                 </nav>
-                <!-- <div class="cta-button">
-                    <a href="#characters">Meet Our Characters</a>
-                </div> -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>SDF AI <span>Characters</span></h1>
-                <p>Digital Voices of Palestine</p>
-                <div class="hero-buttons">
-                    <a href="#characters" class="btn primary-btn">Meet the Characters</a>
-                    <a href="#about" class="btn secondary-btn">Learn More</a>
+    <main>
+    <!-- Hero Section (Modern Redesign) -->
+    <section id="hero" class="hero-modern">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-blob hero-blob-3"></div>
+
+        <div class="container hero-container">
+            <div class="hero-split">
+                <!-- Left Side: Content -->
+                <div class="hero-content-side">
+                    <div class="hero-badge animate-fade-down">حملة Restart</div>
+                    <h1 class="hero-title animate-fade-up">
+                        <span class="highlight">إرجع/ي لنفسك …</span>
+                        <span class="block-text">وابــدأ/ي مـن جديـد</span>
+                    </h1>
+                    <p class="hero-description animate-fade-up delay-100">
+                        لأن غزة اليوم بحاجة إلى مساحة تسمح للشباب واليافعين والفتيات والأسر… بأن يعيدوا التوازن، ويتنفّسوا، ويكسروا الصمت.
+                    </p>
+                    <div class="hero-buttons animate-fade-up delay-200">
+                        <a href="#characters" class="btn primary-btn pulse-btn">
+                            <i class="fas fa-users"></i> شخصياتنا
+                        </a>
+                        <a href="#podcast" class="btn secondary-btn">
+                            <i class="fas fa-podcast"></i> بودكاست Restart في دقيقة
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Image -->
+                <div class="hero-image-side animate-fade-up delay-200">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/hero.webp" alt="حملة Restart - إرجع لنفسك وابدأ من جديد - الصحة النفسية والدعم النفسي الاجتماعي في غزة" class="hero-main-image">
+                        <div class="hero-image-overlay"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Scroll Down Indicator -->
+        <a href="#about" class="scroll-down-indicator">
+            <span class="arrow"></span>
+        </a>
     </section>
 
-    <!-- About SDF Section -->
+    <!-- About Section -->
     <section id="about">
         <div class="container">
-            <div class="section-header">
-                <h2>About <span>SDF</span></h2>
-            </div>
-            <div class="about-content">
+            <div class="about-grid">
                 <div class="about-text">
-                    <p>The Social Developmental Forum is a youth-led non-governmental organization established in 2006 to serve as a civic model that adopts developmental vision through devoting digital and non-digital tools. SDF's inclusive and participatory approach adheres to the optimal standards of Human Rights, the Rule of Law, and Civic Values.</p>
-                    <p>Youth are SDF's core targeted group, aiming to promote their agency in driving change and sustainable development and to empower them to be national and regional role models.</p>
-                    <p>SDF AI represents the organization through digital characters based on real-life individuals, to speak up about the SDF and its mission and vision in building and helping Palestinians and play a vital role on the ground.</p>
+                    <h2>عن الحملة</h2>
+                    <p class="about-intro animate-on-scroll">أدّت سنوات طويلة من الصراع والأزمات الإنسانية في قطاع غزة إلى آثار خطيرة على الصحة النفسية، خاصةً لدى الفئات الأكثر هشاشة. تشير التقارير إلى أن أكثر من 1.2 مليون طفل في غزة يحتاجون إلى دعم نفسي مباشر بعد موجات الحرب الأخيرة.</p>
+                    
+                    <p class="about-tagline animate-on-scroll">لأن غزة اليوم بحاجة إلى مساحة تسمح للشباب واليافعين والفتيات والأسر بأن يعيدوا التوازن، ويتنفّسوا، ويكسروا الصمت، ويعيدوا بناء طاقتهم النفسية والاجتماعية.</p>
+                    
+                    <p class="about-mission animate-on-scroll">تهدف حملة Restart إلى مساعدة الشباب وأفراد المجتمع في غزة على "إعادة التشغيل" والعودة إلى التوازن بعد فترات من الضغط والصدمات، من خلال رفع الوعي، كسر الوصمة، وتشجيع طلب الدعم.</p>
+                    
+                    <div class="about-objectives animate-on-scroll">
+                        <h3>أهداف الحملة</h3>
+                        <ul class="objectives-list">
+                            <li>نشر محتوى بسيط وسهل الفهم حول الصحة النفسية والضغوط اليومية</li>
+                            <li>تعزيز التفاعل الرقمي بين الشباب من خلال محتوى يقوده الأقران</li>
+                            <li>تقديم نصائح عملية وتوعوية عن كيفية التعامل مع القلق، الخوف، الصدمات اليومية، والانهيار العاطفي</li>
+                            <li>توجيه الجمهور إلى الخدمات المتاحة (مراكز دعم، خطوط ساخنة، مساحات آمنة)</li>
+                            <li>بناء مجتمع رقمي داعم يوفر مساحة آمنة للحديث والتعبير</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="assets/Untitled design (14).webp" alt="SDF Team">
+                    <img src="assets/about.webp" alt="عن حملة Restart - الصحة النفسية والدعم النفسي الاجتماعي للشباب في غزة">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Character Introduction Section -->
-    <section id="intro">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Digital <span>Ambassadors</span></h2>
-            </div>
-            <div class="intro-content">
-                <p>Meet our digital characters who represent the voice and spirit of Palestinian youth. Each character has their own unique story and perspective, inspired by real individuals who are making a difference in their communities.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Character Showcase Section -->
+    <!-- Characters Section -->
     <section id="characters">
+        <div class="character-blob character-blob-1"></div>
+        <div class="character-blob character-blob-2"></div>
+        <div class="character-blob character-blob-3"></div>
         <div class="container">
-            <div class="character-slideshow-wrapper">
-                <!-- Navigation Arrows -->
-                <button class="slideshow-arrow prev-arrow" aria-label="Previous character">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slideshow-arrow next-arrow" aria-label="Next character">
+            <div class="animate-on-scroll">
+                <h2>شخصيات الحملة</h2>
+                <p class="characters-intro">
+                    ثلاث شخصيات تمثل أصواتكم، تشارككم المشاعر، وتسمع منكم بلا أحكام.
+                </p>
+            </div>
+            
+            <div class="character-tabs animate-on-scroll delay-100">
+                <button id="btn-aya" class="tab-btn active" onclick="openCharacter(event, 'aya')">آية (Aya)</button>
+                <button id="btn-atta" class="tab-btn" onclick="openCharacter(event, 'atta')">عطا (Atta)</button>
+                <button id="btn-rawan" class="tab-btn" onclick="openCharacter(event, 'rawan')">روان (Rawan)</button>
+            </div>
+
+            <div class="character-carousel-wrapper">
+                <button class="character-arrow character-arrow-prev" onclick="changeCharacter(-1)" aria-label="Previous character">
                     <i class="fas fa-chevron-right"></i>
                 </button>
                 
-                <div class="character-slideshow-container">
-                    <!-- Aya Character -->
-                    <div id="aya" class="character-slide active">
-                        <div class="character-card">
-                            <div class="character-profile">
-                                <div class="profile-image">
-                                    <img src="assets/17.png" alt="Aya">
-                                </div>
-                                <div class="profile-info">
-                                    <h3>Aya <span class="aka">- The Educator</span></h3>
-                                    <div class="character-bio">
-                                        <p>Born and raised in Rafah, 24-year-old Aya is a passionate advocate for education and technology in Palestine. With her background in Management Information Systems, she bridges the gap between traditional values and modern innovation.</p>
-                                        <p>Known affectionately as "Watermelon" among her friends for her sweet nature and strong core, Aya works tirelessly to create digital literacy programs for youth in her community. Her dream is to see Palestinian youth leading technological innovation in the region.</p>
-                                        <p>"Education is our strongest weapon against oppression. When we empower our youth with knowledge and digital skills, we're building the foundation for a self-sufficient future."</p>
-                                    </div>
-                                    <div class="character-quote">
-                                        <blockquote>
-                                            "The future belongs to those who can both honor their heritage and embrace innovation. This is how we will build a sustainable Palestine."
-                                        </blockquote>
-                                    </div>
-                                    <div class="character-voice">
-                                        <h4>Listen to Aya's Message</h4>
-                                        <audio controls>
-                                            <source src="assets/aya_voice.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                        </audio>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="character-carousel">
+                    <!-- Aya -->
+                    <div id="aya" class="character-content active">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="assets/ayaWebsite.webp" alt="آية - الصديقة القوية الهادئة في حملة Restart للصحة النفسية">
                     </div>
-
-                    <!-- Atta Character -->
-                    <div id="atta" class="character-slide">
-                        <div class="character-card">
-                            <div class="character-profile">
-                                <div class="profile-image">
-                                    <img src="assets/16.png" alt="Atta">
-                                </div>
-                                <div class="profile-info">
-                                    <h3>Atta <span class="aka">- The Coordinator</span></h3>
-                                    <div class="character-bio">
-                                        <p>Atta, 24, hails from Jabalya and has dedicated his life to telling Palestinian stories through journalism. With his education in Press and Media, he believes in the power of narrative to change perceptions and build bridges.</p>
-                                        <p>His friends call him "Nickel" for his resilience and ability to shine even in the darkest circumstances. Atta documents daily life, challenges, and triumphs in Palestine, ensuring that authentic voices are heard globally.</p>
-                                        <p>"Our stories have been told by others for too long. It's time we reclaim our narrative and share the rich tapestry of Palestinian life through our own lens."</p>
-                                    </div>
-                                    <div class="character-quote">
-                                        <blockquote>
-                                            "In a world of noise, authentic storytelling cuts through. I believe that honest journalism can transform how the world sees Palestine."
-                                        </blockquote>
-                                    </div>
-                                    <div class="character-voice">
-                                        <h4>Listen to Atta's Message</h4>
-                                        <audio controls>
-                                            <source src="assets/atta_voice.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                        </audio>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="character-info">
+                        <span class="character-role">الصديقة القوية الهادئة</span>
+                        <h3>آية</h3>
+                        <div class="character-description">
+                            <p>آية تمثل الفتيات الجامعيات والشابات العاملات. تتحدث بفصحى بسيطة مع لمسات غزاوية خفيفة. قيمتها الأساسية هي الثقة والاستقلالية والقوة الداخلية.</p>
+                            <p class="character-style"><strong>أسلوبها:</strong> واقعية، مباشرة، هادئة، وتفكر بعقلانية.</p>
                         </div>
-                    </div>
-
-                    <!-- Rawan Character -->
-                    <div id="rawan" class="character-slide">
-                        <div class="character-card">
-                            <div class="character-profile">
-                                <div class="profile-image">
-                                    <img src="assets/15.png" alt="Rawan">
-                                </div>
-                                <div class="profile-info">
-                                    <h3>Rawan <span class="aka">- The Entrepreneur</span></h3>
-                                    <div class="character-bio">
-                                        <p>Rawan is a 24-year-old entrepreneur from Gaza City with a business degree and a vision for economic empowerment. She represents the resilient spirit of Palestinian women who are creating opportunities despite challenging circumstances.</p>
-                                        <p>Known as "Palestinian Keffiyeh" for embodying traditional values while weaving new patterns of opportunity, Rawan mentors young women in business skills and sustainable development practices.</p>
-                                        <p>"Economic independence is a crucial form of resistance. When we build our own businesses and support local production, we strengthen our community from within."</p>
-                                    </div>
-                                    <div class="character-quote">
-                                        <blockquote>
-                                            "We don't need charity; we need opportunity. Palestinian youth have the talent and drive to build thriving businesses that can transform our economy."
-                                        </blockquote>
-                                    </div>
-                                    <div class="character-voice">
-                                        <h4>Listen to Rawan's Message</h4>
-                                        <audio controls>
-                                            <source src="assets/rawan_voice.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                        </audio>
-                                    </div>
-                                </div>
-                            </div>
+                        
+                        <div class="character-quote">
+                            "مرّينا بأيام صعبة… بس كل يوم فيه فرصة صغيرة نرجّع توازننا. اعتني بحالك… حتى لو بدقيقة."
                         </div>
+
+                        <div class="voice-player">
+                            <h4>استمع لرسالة آية:</h4>
+                            <audio controls>
+                                <source src="assets/aya_voice.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم مشغل الصوت.
+                            </audio>
+                        </div>
+                        
+                        <a href="character.html?id=aya" class="character-learn-more">
+                            <span>اعرف المزيد عن آية</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Atta -->
+            <div id="atta" class="character-content">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="assets/attaWebsite.webp" alt="عطا - الأخ الأكبر الداعم في حملة Restart للصحة النفسية">
+                    </div>
+                    <div class="character-info">
+                        <span class="character-role">الأخ الأكبر الداعم</span>
+                        <h3>عطا</h3>
+                        <div class="character-description">
+                            <p>عطا يمثل الشباب الذكور وطلاب الجامعات. يتحدث بلهجة غزاوية محترمة وقريبة من القلب. قيمته الأساسية هي الحكمة والطمأنينة والخبرة الواقعية.</p>
+                            <p class="character-style"><strong>أسلوبه:</strong> بسيط، قريب، مريح، وبدون رسميات.</p>
+                        </div>
+                        
+                        <div class="character-quote">
+                            "بعرف الضغط اللي بتحسّه، اسمح لنفسك ترتاح شوي… طبيعي تتعب."
+                        </div>
+
+                        <div class="voice-player">
+                            <h4>استمع لرسالة عطا:</h4>
+                            <audio controls>
+                                <source src="assets/atta_voice.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم مشغل الصوت.
+                            </audio>
+                        </div>
+                        
+                        <a href="character.html?id=atta" class="character-learn-more">
+                            <span>اعرف المزيد عن عطا</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rawan -->
+            <div id="rawan" class="character-content">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="assets/rawanWebsite.webp" alt="روان - الأخت والصديقة اللطيفة في حملة Restart للصحة النفسية">
+                    </div>
+                    <div class="character-info">
+                        <span class="character-role">الأخت/الصديقة اللطيفة</span>
+                        <h3>روان</h3>
+                        <div class="character-description">
+                            <p>روان تمثل الفتيات المراهقات والنازحات. تتحدث بلهجة غزاوية خفيفة وفصحى بسيطة. قيمتها الأساسية هي اللطف والأمان والتعاطف.</p>
+                            <p class="character-style"><strong>أسلوبها:</strong> لطيفة، جملها قصيرة، مليئة بالتفهّم، وحساسة لمشاعر البنات.</p>
+                        </div>
+                        
+                        <div class="character-quote">
+                            "أنا معك، احكي اللي بخاطرك… مش غلط لو حسّيتي بخوف… كلنا منمرّ بهيك لحظات."
+                        </div>
+
+                        <div class="voice-player">
+                            <h4>استمع لرسالة روان:</h4>
+                            <audio controls>
+                                <source src="assets/rawan_voice.mp3" type="audio/mpeg">
+                                متصفحك لا يدعم مشغل الصوت.
+                            </audio>
+                        </div>
+                        
+                        <a href="character.html?id=rawan" class="character-learn-more">
+                            <span>اعرف المزيد عن روان</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
                 
-                <!-- Character Indicators Only -->
-                <div class="character-slideshow-controls">
-                    <div class="character-indicators">
-                        <span class="character-indicator active" data-character="aya">Aya</span>
-                        <span class="character-indicator" data-character="atta">Atta</span>
-                        <span class="character-indicator" data-character="rawan">Rawan</span>
+                <button class="character-arrow character-arrow-next" onclick="changeCharacter(1)" aria-label="Next character">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            
+            <div class="character-dots">
+                <span class="character-dot active" onclick="goToCharacter(0)" aria-label="Go to Aya"></span>
+                <span class="character-dot" onclick="goToCharacter(1)" aria-label="Go to Atta"></span>
+                <span class="character-dot" onclick="goToCharacter(2)" aria-label="Go to Rawan"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="audience">
+        <div class="container">
+            <div class="audience-content animate-on-scroll">
+                <h2>لمن هذه الحملة؟</h2>
+                <p class="audience-intro">نسعى للوصول إلى كل من يحتاج الدعم في غزة، مع التركيز على الفئات الأكثر هشاشة.</p>
+                
+                <div class="audience-visual">
+                    <div class="audience-primary-visual">
+                        <div class="audience-header">
+                            <div class="audience-icon-wrapper">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>الفئات الأساسية</h3>
+                        </div>
+                        <div class="audience-items-grid">
+                            <div class="audience-item animate-on-scroll delay-100">
+                                <div class="audience-item-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="audience-item-content">
+                                    <h4>اليافعين والشباب</h4>
+                                    <p>(10–24 سنة) من كلا الجنسين، بما يشمل الطلبة، المتطوعين، واليافعين في المساحات الآمنة.</p>
+                                </div>
+                            </div>
+                            <div class="audience-item animate-on-scroll delay-200">
+                                <div class="audience-item-icon">
+                                    <i class="fas fa-female"></i>
+                                </div>
+                                <div class="audience-item-content">
+                                    <h4>الفتيات المراهقات</h4>
+                                    <p>خصوصًا في الخيام والمساحات الآمنة، مع مراعاة خصوصية المخاوف والمخاطر التي تواجههن.</p>
+                                </div>
+                            </div>
+                            <div class="audience-item animate-on-scroll delay-300">
+                                <div class="audience-item-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="audience-item-content">
+                                    <h4>الأسر النازحة</h4>
+                                    <p>المجتمعات المتضررة في المخيمات ومراكز الإيواء.</p>
+                                </div>
+                            </div>
+                            <div class="audience-item animate-on-scroll delay-100">
+                                <div class="audience-item-icon">
+                                    <i class="fas fa-wheelchair"></i>
+                                </div>
+                                <div class="audience-item-content">
+                                    <h4>الأشخاص ذوو الإعاقة</h4>
+                                    <p>شباب وفتيات، مع تكييف المحتوى لتلبية احتياجاتهم.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="audience-secondary-visual">
+                        <div class="audience-header">
+                            <div class="audience-icon-wrapper secondary">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>الفئات الثانوية</h3>
+                        </div>
+                        <div class="audience-items-list">
+                            <div class="audience-item-small animate-on-scroll delay-200">
+                                <i class="fas fa-home"></i>
+                                <span>الأهالي ومقدّمو الرعاية</span>
+                            </div>
+                            <div class="audience-item-small animate-on-scroll delay-300">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>المعلّمون والمرشدون</span>
+                            </div>
+                            <div class="audience-item-small animate-on-scroll delay-100">
+                                <i class="fas fa-users-cog"></i>
+                                <span>قادة المجتمع</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast Section -->
+    <section id="podcast">
+        <div class="podcast-blob podcast-blob-1"></div>
+        <div class="podcast-blob podcast-blob-2"></div>
+        <div class="podcast-blob podcast-blob-3"></div>
+        <div class="container">
+            <div class="podcast-content-wrapper">
+                <div class="podcast-content-side">
+                    <h2 class="animate-on-scroll">Restart في دقيقة</h2>
+                    <p class="podcast-intro animate-on-scroll delay-100">بودكاست قصير يقدم نصائح سريعة للصحة النفسية والدعم النفسي الاجتماعي</p>
+                    <div class="episodes-grid">
+                <!-- Episode 1 - Available -->
+                <div class="episode-card animate-on-scroll delay-100">
+                    <div class="episode-number">الحلقة 1</div>
+                    <h3 class="episode-title">الأسبوع الأول مع روان</h3>
+                    <div class="episode-audio">
+                        <audio controls>
+                            <source src="assets/rawanWeekOne.mp3" type="audio/mpeg">
+                            متصفحك لا يدعم مشغل الصوت.
+                        </audio>
+                    </div>
+                </div>
+
+                <!-- Episode 2 - Available -->
+                <div class="episode-card animate-on-scroll delay-200">
+                    <div class="episode-number">الحلقة 2</div>
+                    <h3 class="episode-title">الأسبوع الثاني مع روان</h3>
+                    <div class="episode-audio">
+                        <audio controls>
+                            <source src="assets/rawanWeekTwo.mp3" type="audio/mpeg">
+                            متصفحك لا يدعم مشغل الصوت.
+                        </audio>
+                    </div>
+                </div>
+
+                <!-- Episode 3 - Coming Soon -->
+                <div class="episode-card episode-coming-soon animate-on-scroll delay-300">
+                    <div class="episode-number">الحلقة 3</div>
+                    <h3 class="episode-title">قريباً</h3>
+                    <div class="episode-status">
+                        <span class="coming-soon-badge">قريباً</span>
+                    </div>
+                </div>
+
+                <!-- Episode 4 - Coming Soon -->
+                <div class="episode-card episode-coming-soon animate-on-scroll delay-100">
+                    <div class="episode-number">الحلقة 4</div>
+                    <h3 class="episode-title">قريباً</h3>
+                    <div class="episode-status">
+                        <span class="coming-soon-badge">قريباً</span>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div class="podcast-image-side">
+                    <img src="assets/podcast-mic.webp" alt="بودكاست Restart في دقيقة - نصائح سريعة للصحة النفسية والدعم النفسي الاجتماعي" class="podcast-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote">
+        <div class="quote-bg-text quote-bg-text-left">
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="quote-bg-text quote-bg-text-right">
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="contact-blob contact-blob-1"></div>
+        <div class="contact-blob contact-blob-2 contact-blob-yellow"></div>
+        <div class="contact-blob contact-blob-3"></div>
+        <div class="contact-blob contact-blob-4 contact-blob-yellow"></div>
+        <div class="contact-blob contact-blob-5"></div>
+        <div class="container">
+            <div class="quote-box animate-on-scroll">
+                <blockquote class="quote-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="quote-text">نؤمن بأن كل شخص يستحق مساحة آمنة للتعبير عن مشاعره والحصول على الدعم الذي يحتاجه. نحن هنا لمساعدتك.</p>
+                    <div class="quote-org-wrapper">
+                        <span class="quote-org-divider"></span>
+                        <span class="quote-org-text">المنتدى الاجتماعي التنموي - SDF</span>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2 class="animate-on-scroll">قنواتنا</h2>
+            <div class="channels-grid">
+                <a href="https://www.facebook.com/sdf.pal/" target="_blank" class="channel-link animate-on-scroll delay-200" aria-label="فيسبوك">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/sdf.pal/" target="_blank" class="channel-link animate-on-scroll delay-300" aria-label="إنستغرام">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/SdfPal" target="_blank" class="channel-link animate-on-scroll delay-100" aria-label="X">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/sdf-pal" target="_blank" class="channel-link animate-on-scroll delay-200" aria-label="لينكد إن">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com/@socialdevelopmentalforum-s652" target="_blank" class="channel-link animate-on-scroll delay-300" aria-label="يوتيوب">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/970595000000" target="_blank" class="channel-link animate-on-scroll delay-100" aria-label="واتساب">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -199,103 +567,77 @@
     <!-- Gallery Section -->
     <section id="gallery">
         <div class="container">
-            <div class="section-header">
-                <h2>Character <span>Gallery</span></h2>
-            </div>
-            <div class="gallery-content">
-                <p class="gallery-intro">Explore our SDF AI characters in action, representing the spirit and resilience of Palestinian youth.</p>
-                
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="assets/10.webp" alt="SDF Character - Aya with aid box">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Rawan delivering humanitarian aid</div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item">
-                        <img src="assets/9.webp" alt="SDF Character - Aya setting up tent">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Rawan helping with shelter setup</div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item">
-                        <img src="assets/8.webp" alt="SDF Character - Rawan with supplies">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Aya distributing supplies</div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item">
-                        <img src="assets/7.webp" alt="SDF Character - Atta planting tree">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Atta caring for the elderly</div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item">
-                        <img src="assets/6.webp" alt="SDF Character - Atta with elderly">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Aya delivering the voice of Palestinians</div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-item">
-                        <img src="assets/5.webp" alt="SDF Character - Rawan speaking">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Atta advocating through journalism</div>
-                        </div>
-                    </div>
-                    
-                                        <!-- 
-                    <div class="gallery-item">
-                        <img src="assets/4.webp" alt="SDF Character - Atta speaking">
-                        <div class="gallery-overlay">
-                            <div class="gallery-caption">Atta speaking at community events</div>
-                        </div>
-                    </div>Atta Character -->
+            <h2 class="animate-on-scroll">معرض الصور</h2>
+            <p class="gallery-intro animate-on-scroll delay-100">لحظات من أنشطتنا وفعالياتنا</p>
+            <div class="gallery-masonry">
+                <div class="gallery-item gallery-item-large animate-on-scroll delay-100">
+                    <img src="assets/4.webp" alt="أنشطة وفعاليات حملة Restart للصحة النفسية في غزة" class="gallery-image">
+                </div>
+                <div class="gallery-item gallery-item-medium animate-on-scroll delay-200">
+                    <img src="assets/5.webp" alt="فعاليات دعم الصحة النفسية للشباب في غزة - حملة Restart" class="gallery-image">
+                </div>
+                <div class="gallery-item gallery-item-small animate-on-scroll delay-300">
+                    <img src="assets/6.webp" alt="أنشطة الدعم النفسي الاجتماعي - حملة Restart" class="gallery-image">
+                </div>
+                <div class="gallery-item gallery-item-medium animate-on-scroll delay-100">
+                    <img src="assets/7.webp" alt="فعاليات توعية الصحة النفسية للشباب واليافعين - Restart" class="gallery-image">
+                </div>
+                <div class="gallery-item gallery-item-large animate-on-scroll delay-200">
+                    <img src="assets/8.webp" alt="أنشطة حملة Restart لدعم الصحة النفسية في غزة" class="gallery-image">
+                </div>
+                <div class="gallery-item gallery-item-small animate-on-scroll delay-300">
+                    <img src="assets/9.webp" alt="فعاليات المنتدى الاجتماعي التنموي - حملة Restart" class="gallery-image">
+                </div>
+                <div class="gallery-item gallery-item-small gallery-item-mobile-only animate-on-scroll delay-100">
+                    <img src="assets/10.webp" alt="أنشطة دعم الصحة النفسية للشباب في غزة" class="gallery-image">
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact <span>Us</span></h2>
-            </div>
-            <div class="contact-content">
-                <p>Want to learn more about SDF AI characters or collaborate with us? We'd love to hear from you!</p>
-                <div class="cta-button">
-                    <a href="https://sdf-pal.org/en/contact-us/" target="_blank">Contact SDF</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
+        <div class="footer-blob footer-blob-1"></div>
+        <div class="footer-blob footer-blob-2 footer-blob-yellow"></div>
+        <div class="footer-blob footer-blob-3"></div>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/SDFEN.png" alt="SDF Logo">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/sdf-logo-white.webp" alt="شعار المنتدى الاجتماعي التنموي - SDF">
+                    </div>
+                    <p class="footer-tagline">نؤمن بأن كل شخص يستحق مساحة آمنة للتعبير عن مشاعره</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/sdf.pal/" target="_blank" aria-label="فيسبوك">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/SdfPal" target="_blank" aria-label="X">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/sdf.pal/" target="_blank" aria-label="إنستغرام">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/sdf-pal" target="_blank" aria-label="لينكد إن">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@socialdevelopmentalforum-s652" target="_blank" aria-label="يوتيوب">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
                 <div class="footer-text">
-                    <p>&copy; 2025 Social Developmental Forum. All Rights Reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/sdf.pal/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com/SdfPal" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/sdf.pal/" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@socialdevelopmentalforum-s652" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <p>&copy; 2025 المنتدى الاجتماعي التنموي - جميع الحقوق محفوظة.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="slideshow.js"></script>
 </body>
 </html>
