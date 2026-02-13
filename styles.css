@@ -1333,13 +1333,13 @@ header.scrolled .mobile-menu-toggle.active span {
     }
     
     .character-image {
-        height: 220px;
-        min-height: 220px;
+        height: 300px;
+        min-height: 300px;
     }
     
     .character-image img {
         object-fit: cover;
-        object-position: top center;
+        object-position: center 15%;
     }
     
     .character-info {
@@ -1549,13 +1549,13 @@ header.scrolled .mobile-menu-toggle.active span {
     }
     
     .character-image {
-        height: 200px;
-        min-height: 200px;
+        height: 280px;
+        min-height: 280px;
     }
     
     .character-image img {
         object-fit: cover;
-        object-position: top center;
+        object-position: center 15%;
     }
     
     .character-info {
@@ -1810,6 +1810,7 @@ header.scrolled .mobile-menu-toggle.active span {
     
     .footer-logo {
         margin-bottom: 10px;
+        gap: 12px;
     }
     
     .footer-logo img {
@@ -2098,6 +2099,7 @@ header.scrolled .mobile-menu-toggle.active span {
     
     .footer-logo {
         margin-bottom: 12px;
+        gap: 15px;
     }
     
     .footer-logo img {
@@ -2596,7 +2598,7 @@ header.scrolled .mobile-menu-toggle.active span {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: center 15%;
 }
 
 .character-info {
@@ -3518,12 +3520,17 @@ footer::before {
 .footer-logo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-bottom: 20px;
+    flex-wrap: nowrap;
 }
 
 .footer-logo img {
     height: 60px;
     opacity: 0.95;
+    width: auto;
+    object-fit: contain;
 }
 
 .footer-tagline {
@@ -4097,6 +4104,7 @@ footer::before {
     
     .footer-logo {
         margin-bottom: 18px;
+        gap: 25px;
     }
     
     .footer-logo img {
@@ -4459,13 +4467,13 @@ footer::before {
     }
     
     .character-image {
-        height: 250px;
-        min-height: 250px;
+        height: 320px;
+        min-height: 320px;
     }
     
     .character-image img {
         object-fit: cover;
-        object-position: top center;
+        object-position: center 15%;
     }
     
     .character-info {
@@ -4653,6 +4661,7 @@ footer::before {
     
     .footer-logo {
         margin-bottom: 15px;
+        gap: 20px;
     }
     
     .footer-logo img {
