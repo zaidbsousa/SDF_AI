@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/character/:id",
+      "destination": "/character.html"
+    }
+  ]
+}
