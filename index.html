@@ -129,6 +129,7 @@
                     <ul class="nav-menu">
                         <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
                         <li><a href="#about" class="nav-link">عن الحملة</a></li>
+                        <li><a href="#season-two" class="nav-link">الموسم الثاني</a></li>
                         <li><a href="#audience" class="nav-link">الفئات المستهدفة</a></li>
                         <li>
                             <a href="#characters" class="nav-link">شخصياتنا</a>
@@ -171,11 +172,8 @@
                         لأن غزة اليوم بحاجة إلى مساحة تسمح للشباب واليافعين والفتيات والأسر… بأن يعيدوا التوازن، ويتنفّسوا، ويكسروا الصمت.
                     </p>
                     <div class="hero-buttons animate-fade-up delay-200">
-                        <a href="#characters" class="btn primary-btn pulse-btn">
-                            <i class="fas fa-users"></i> شخصياتنا
-                        </a>
-                        <a href="#podcast" class="btn secondary-btn">
-                            <i class="fas fa-podcast"></i> بودكاست Restart في دقيقة
+                        <a href="#season-two" class="btn secondary-btn">
+                            <i class="fas fa-play"></i> إصدارات الموسم الثاني
                         </a>
                     </div>
                 </div>
@@ -222,6 +220,60 @@
                 <div class="about-image">
                     <img src="assets/about.webp" alt="عن حملة Restart - الصحة النفسية والدعم النفسي الاجتماعي للشباب في غزة">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Season Two Videos Section -->
+    <section id="season-two" class="season-video-section">
+        <div class="container">
+            <div class="season-header animate-on-scroll">
+                <span class="season-eyebrow">الموسم الثاني</span>
+                <h2>إصدارات Restart الجديدة</h2>
+                <p class="season-intro">رسائل قصيرة من الموسم الثاني عن الراحة، الضغط، المشاعر، وطلب الدعم.</p>
+            </div>
+
+            <div class="season-feature-layout animate-on-scroll delay-100">
+                <div class="season-feature-player" id="seasonFeaturePlayer">
+                    <button class="season-feature-poster" id="seasonFeaturePoster" type="button" aria-label="تشغيل فيديو الموسم الثاني">
+                        <img id="seasonFeatureImage" src="https://i.ytimg.com/vi/k3UB1wWAFU8/hqdefault.jpg" alt="مش لازم تحترق عشان تثبت وجودك.. أنت بتستحق الراحة">
+                        <span class="season-play-badge">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </button>
+                    <div class="season-feature-frame" id="seasonFeatureFrame" aria-live="polite"></div>
+                </div>
+
+                <div class="season-feature-copy">
+                    <span class="season-feature-label" id="seasonFeatureLabel">الراحة</span>
+                    <h3 id="seasonFeatureTitle">مش لازم تحترق عشان تثبت وجودك.. أنت بتستحق الراحة</h3>
+                    <a class="season-playlist-link" href="https://www.youtube.com/playlist?list=PLcxaDPpYg28U0qZfJOtfm4eUzhD8yxWCl" target="_blank" rel="noopener">
+                        <span>القائمة كاملة على يوتيوب</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="season-filter-bar animate-on-scroll delay-200" aria-label="تصنيف فيديوهات الموسم الثاني">
+                <button class="season-filter active" type="button" data-filter="all" aria-pressed="true">الكل</button>
+                <button class="season-filter" type="button" data-filter="rest" aria-pressed="false">الراحة</button>
+                <button class="season-filter" type="button" data-filter="stress" aria-pressed="false">الضغط والتوتر</button>
+                <button class="season-filter" type="button" data-filter="support" aria-pressed="false">الدعم</button>
+                <button class="season-filter" type="button" data-filter="feelings" aria-pressed="false">المشاعر</button>
+            </div>
+
+            <div class="season-carousel-shell animate-on-scroll delay-300">
+                <button class="season-carousel-arrow season-carousel-prev" id="seasonCarouselPrev" type="button" aria-label="الفيديوهات السابقة">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="season-carousel-viewport">
+                    <div class="season-videos-grid" id="seasonVideosGrid" aria-live="polite"></div>
+                </div>
+
+                <button class="season-carousel-arrow season-carousel-next" id="seasonCarouselNext" type="button" aria-label="الفيديوهات التالية">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -611,8 +663,12 @@
             <div class="footer-content">
                 <div class="footer-section footer-brand">
                     <div class="footer-logo">
-                        <img src="assets/sdf-logo-white.webp" alt="شعار المنتدى الاجتماعي التنموي - SDF">
-                        <img src="assets/unfpaLogo.webp" alt="شعار صندوق الأمم المتحدة للسكان - UNFPA">
+                        <a href="https://sdf-pal.org/" target="_blank" rel="noopener" aria-label="موقع المنتدى الاجتماعي التنموي - SDF">
+                            <img src="assets/sdf-logo-white.webp" alt="شعار المنتدى الاجتماعي التنموي - SDF">
+                        </a>
+                        <a href="https://www.unfpa.org/" target="_blank" rel="noopener" aria-label="موقع صندوق الأمم المتحدة للسكان - UNFPA">
+                            <img src="assets/unfpaLogo.webp" alt="شعار صندوق الأمم المتحدة للسكان - UNFPA">
+                        </a>
                     </div>
                     <p class="footer-tagline">نؤمن بأن كل شخص يستحق مساحة آمنة للتعبير عن مشاعره</p>
                 </div>

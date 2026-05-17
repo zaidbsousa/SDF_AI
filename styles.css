@@ -2394,6 +2394,528 @@ header.scrolled .mobile-menu-toggle.active span {
     font-size: 1rem;
 }
 
+/* Season Two Videos */
+#season-two {
+    background: var(--white);
+    padding: 64px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#season-two .container {
+    position: relative;
+    z-index: 1;
+}
+
+.season-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 22px;
+}
+
+.season-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid var(--yellow);
+}
+
+#season-two h2 {
+    font-size: clamp(2.4rem, 4vw, 3.25rem);
+    line-height: 1.15;
+    margin-bottom: 8px;
+}
+
+.season-intro {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.season-feature-layout {
+    display: grid;
+    grid-template-columns: minmax(230px, 330px) minmax(0, 1fr);
+    gap: 34px;
+    align-items: center;
+    margin: 20px 0 24px;
+    padding: 24px 0;
+    border-top: 1px solid rgba(84, 22, 145, 0.16);
+    border-bottom: 1px solid rgba(84, 22, 145, 0.16);
+}
+
+.season-feature-player {
+    width: min(100%, 300px);
+    aspect-ratio: 9 / 16;
+    justify-self: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #180b25;
+    box-shadow: 0 22px 50px rgba(84, 22, 145, 0.22);
+}
+
+.season-feature-poster,
+.season-feature-frame,
+.season-feature-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.season-feature-poster {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    background: #180b25;
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+}
+
+.season-feature-poster::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(24, 11, 37, 0.04) 0%, rgba(24, 11, 37, 0.5) 100%);
+}
+
+.season-feature-poster:hover img {
+    transform: scale(1.04);
+}
+
+.season-feature-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.season-feature-frame {
+    z-index: 1;
+}
+
+.season-feature-frame iframe {
+    border: 0;
+}
+
+.season-feature-player.is-playing .season-feature-poster {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.season-play-badge,
+.season-video-play {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--yellow);
+    color: var(--purple);
+    box-shadow: 0 12px 28px rgba(24, 11, 37, 0.22);
+    z-index: 2;
+}
+
+.season-play-badge {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.45rem;
+}
+
+.season-play-badge i,
+.season-video-play i {
+    transform: translateX(-1px);
+}
+
+.season-feature-copy {
+    max-width: 620px;
+}
+
+.season-feature-label {
+    display: inline-flex;
+    color: var(--purple);
+    background: rgba(247, 188, 62, 0.22);
+    border: 1px solid rgba(247, 188, 62, 0.48);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.season-feature-copy h3 {
+    color: #24132f;
+    font-size: clamp(1.7rem, 3vw, 2.75rem);
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.season-feature-copy p {
+    color: #3f3448;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    max-width: 560px;
+}
+
+.season-playlist-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--purple);
+    font-weight: 700;
+    margin-top: 2px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.season-playlist-link:hover {
+    color: var(--purple-light);
+    gap: 14px;
+}
+
+.season-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 auto 22px;
+}
+
+.season-filter {
+    border: 1px solid rgba(84, 22, 145, 0.22);
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--purple);
+    border-radius: 8px;
+    min-height: 38px;
+    padding: 7px 13px;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.season-filter:hover,
+.season-filter.active {
+    background: var(--purple);
+    color: var(--white);
+    border-color: var(--purple);
+    transform: translateY(-2px);
+}
+
+.season-carousel-shell {
+    position: relative;
+    padding: 0 56px;
+}
+
+.season-carousel-viewport {
+    overflow: hidden;
+}
+
+.season-videos-grid {
+    display: flex;
+    gap: 14px;
+    align-items: stretch;
+    overflow-x: auto;
+    scrollbar-width: none;
+    direction: rtl;
+    cursor: grab;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    user-select: none;
+    padding: 4px 2px 12px;
+}
+
+.season-videos-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.season-videos-grid.is-dragging {
+    cursor: grabbing;
+}
+
+.season-carousel-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    border: 2px solid rgba(84, 22, 145, 0.18);
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(84, 22, 145, 0.12);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+
+.season-carousel-arrow:hover {
+    background: var(--purple);
+    color: var(--white);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.season-carousel-arrow:disabled {
+    opacity: 0.36;
+    cursor: default;
+    pointer-events: none;
+}
+
+.season-carousel-prev {
+    right: 0;
+}
+
+.season-carousel-next {
+    left: 0;
+}
+
+.season-video-card {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    flex: 0 0 calc((100% - 70px) / 6);
+    min-width: 150px;
+    text-align: right;
+    direction: rtl;
+    border: 1px solid rgba(84, 22, 145, 0.16);
+    border-radius: 8px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.86);
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.season-video-card:hover {
+    border-color: rgba(247, 188, 62, 0.72);
+}
+
+.season-video-card.active {
+    border-color: var(--yellow);
+}
+
+.season-video-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #180b25;
+}
+
+.season-video-thumb::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(24, 11, 37, 0) 45%, rgba(24, 11, 37, 0.58) 100%);
+}
+
+.season-video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    transition: transform 0.28s ease;
+}
+
+.season-video-card:hover .season-video-thumb img {
+    transform: scale(1.05);
+}
+
+.season-video-play {
+    width: 38px;
+    height: 38px;
+    left: 10px;
+    bottom: 10px;
+    font-size: 0.86rem;
+}
+
+.season-video-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 82px;
+}
+
+.season-video-tag {
+    color: var(--purple);
+    font-size: 0.74rem;
+    font-weight: 700;
+}
+
+.season-video-title {
+    color: #2f2438;
+    font-size: 0.84rem;
+    font-weight: 700;
+    line-height: 1.48;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1100px) {
+    .season-video-card {
+        flex-basis: calc((100% - 42px) / 4);
+    }
+}
+
+@media (max-width: 992px) {
+    #season-two {
+        padding: 56px 0;
+    }
+
+    .season-feature-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        text-align: center;
+    }
+
+    .season-feature-copy {
+        margin: 0 auto;
+    }
+
+    .season-feature-copy p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .season-feature-player {
+        width: min(100%, 280px);
+    }
+
+    .season-carousel-shell {
+        padding: 0 48px;
+    }
+
+    .season-video-card {
+        flex-basis: calc((100% - 28px) / 3);
+    }
+}
+
+@media (max-width: 768px) {
+    #season-two {
+        padding: 44px 0;
+    }
+
+    .season-header {
+        margin-bottom: 18px;
+    }
+
+    .season-intro {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .season-feature-layout {
+        margin: 16px 0 20px;
+        padding: 20px 0;
+    }
+
+    .season-feature-player {
+        width: min(100%, 250px);
+    }
+
+    .season-feature-copy h3 {
+        font-size: 1.55rem;
+    }
+
+    .season-feature-copy p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+    }
+
+    .season-filter-bar {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 2px 0 10px;
+        margin-bottom: 18px;
+        scrollbar-width: none;
+    }
+
+    .season-filter-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .season-filter {
+        flex: 0 0 auto;
+        min-height: 36px;
+        font-size: 0.84rem;
+        padding: 7px 12px;
+    }
+
+    .season-carousel-shell {
+        padding: 0 38px;
+    }
+
+    .season-carousel-arrow {
+        width: 34px;
+        height: 34px;
+        top: 36%;
+        font-size: 0.82rem;
+    }
+
+    .season-videos-grid {
+        gap: 12px;
+    }
+
+    .season-video-card {
+        flex-basis: calc((100% - 12px) / 2);
+        min-width: 136px;
+        padding: 7px;
+    }
+
+    .season-video-meta {
+        min-height: 100px;
+    }
+
+    .season-video-title {
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+    .season-video-play {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (max-width: 430px) {
+    .season-feature-player {
+        width: min(100%, 230px);
+    }
+
+    #season-two h2 {
+        font-size: 2.2rem;
+    }
+
+    .season-carousel-shell {
+        padding: 0 34px;
+    }
+
+    .season-video-meta {
+        min-height: 122px;
+    }
+}
+
 /* Characters Section */
 #characters {
     background: var(--purple);
@@ -3524,6 +4046,12 @@ footer::before {
     gap: 30px;
     margin-bottom: 20px;
     flex-wrap: nowrap;
+}
+
+.footer-logo a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo img {

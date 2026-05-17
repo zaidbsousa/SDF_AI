@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.pathname;
     
     // Check for clean URL format: /character/aya, /character/atta, /character/rawan
-    const cleanUrlMatch = path.match(/\/character\/(aya|atta|rawan)$/);
+    const cleanUrlMatch = path.match(/\/character\/(aya|atta|rawan)\/?$/);
     if (cleanUrlMatch) {
         characterId = cleanUrlMatch[1];
     } else {
@@ -403,4 +403,3 @@ function loadCharacter(character) {
         }).join('');
     }
 }
-
